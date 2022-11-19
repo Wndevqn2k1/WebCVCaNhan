@@ -1,0 +1,68 @@
+
+*{
+    margin: 0;  padding: 0;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-menu li a{
+    color: #ffd700;
+    display: block;
+    transform: translateX(300px);
+    padding: 18px 10px;
+    text-decoration: none;
+}
+.contact{
+    padding: 10px 150px;
+    transform: translateX(400px);
+}
+.gioithieu{
+    width: 100%;
+    height: 400px;
+    margin: 50px 100px;
+}
+.avata img{
+    transform: translateX(50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+#loading-web{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    overflow: hidden;
+ }
+ #loading-web .loading-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    animation-name: loading;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+ }
+ .active{
+    visibility:hidden;
+ }
+ @keyframes loading{
+    0%{
+       opacity: 0;
+    }
+ 
+    50%{
+       opacity: 1;
+    }
+    100%{
+       opacity: 0;
+    }
+ }
